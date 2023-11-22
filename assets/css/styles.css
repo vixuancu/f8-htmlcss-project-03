@@ -12,6 +12,29 @@ body {
   font-family: "Sora", sans-serif;
 }
 /* common */
+.btn {
+  /*làm cho cả trường hợp button*/
+  --height: 60px;
+  height: var(--height);
+  display: inline-block;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: var(--height); /* 166.667% */
+  background: #2e80ce;
+  padding: 0 20px;
+  border-radius: 99px;
+  min-width: 205px;
+  text-align: center;
+  border: 1px solid #2e80ce;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -21,6 +44,7 @@ body {
 .header {
   min-height: 100vh;
   background-color: var(--header-bg);
+  padding-top: 30px;
 }
 .logo {
   position: relative;
@@ -61,4 +85,42 @@ body {
   font-size: 1.2em;
   font-weight: 300;
   line-height: 1.6em;
+}
+/* header top */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+}
+.action__login,
+.navbar__link {
+  padding: 4px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+.navbar__link:hover,
+.navbar__link--active {
+  text-shadow: 0.6px 0 0 currentColor;
+  color: #fff;
+}
+.navbar__link--active::before {
+  position: relative;
+  left: -8px;
+  top: -2px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.action__signup {
+  --height: 44px;
+  min-width: 104px;
+  font-size: 1.6rem;
 }
