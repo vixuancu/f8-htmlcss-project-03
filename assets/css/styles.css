@@ -95,7 +95,7 @@ a {
 .navbar__list {
   display: flex;
 }
-.action__login,
+.header-action__login,
 .navbar__link {
   padding: 4px 21px;
   color: #c9d2da;
@@ -119,8 +119,73 @@ a {
   border-radius: 50%;
   background-color: #fff;
 }
-.action__signup {
+.header-action {
+  display: flex;
+  align-items: center;
+}
+.header-action__login {
+  margin-right: 7px;
+}
+.header-action__signup {
   --height: 44px;
   min-width: 104px;
   font-size: 1.6rem;
+}
+/* hero */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+.hero__content {
+  flex-shrink: 0; /*chiếm đúng kích thước*/
+  width: 44%;
+}
+.hero__media {
+  flex-grow: 1; /*chiếm hết chỗ còn lại*/
+}
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -0.02em;
+}
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66; /* 166.667% */
+}
+.hero__row {
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
+  margin-top: 38px;
+}
+.hero__phone {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero__img {
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.hero__img:first-child {
+  margin-right: -6px;
+  position: relative;
+}
+.hero__img:last-child {
+  width: 210px;
+  height: 410px;
 }
